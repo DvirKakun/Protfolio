@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="/icons/dk-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="me-2" src="/images/React+FastAPI.png" alt="React+FastAPI" style="height: 32px; width: auto;">
+                Dvir Kakun
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navbarNavList">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="/images/Profile-Image.png" alt="Dvir Kakun" class="profile-image">
+                    </div>
+                    
+                    <!-- Modern Title -->
+                    <h1 class="hero-title mb-4">
+                        Hi, I'm <span class="text-gradient">Dvir Kakun</span>
+                        <br>
+                        <span class="hero-subtitle">Fullstack Developer</span>
+                    </h1>
+                    
+                    <!-- Sharp Description -->
+                    <p class="hero-description mb-5">
+                        I craft digital experiences from concept to deployment, wielding both frontend finesse and backend brilliance to build scalable, modern web applications.
+                    </p>
+                    
+                    <!-- Enhanced Buttons -->
+                    <div class="hero-buttons d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="#portfolio" class="btn btn-hero-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-hero-secondary">Let's Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="about-main-title mb-4">
+                        About <span class="text-gradient-purple">Me</span>
+                    </h2>
+                    <p class="about-main-subtitle">
+                        Passionate fullstack developer crafting digital experiences
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <p class="about-description mb-4">
+                            I'm a passionate fullstack developer who bridges the gap between creative design and robust functionality. With expertise spanning modern frontend frameworks and scalable backend architectures, I transform ideas into digital realities.
+                        </p>
+                        <p class="about-description mb-4">
+                            My journey in web development is driven by curiosity and a commitment to crafting solutions that not only work beautifully but also scale efficiently. I believe in writing clean, maintainable code that tells a story.
+                        </p>
+                        
+                        <!-- Key Points -->
+                        <div class="row g-3 mt-3">
+                            <div class="col-12">
+                                <div class="highlight-item d-flex align-items-start">
+                                    <div class="highlight-icon me-3 flex-shrink-0">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h5 class="mb-2">Clean Code Advocate</h5>
+                                        <p class="mb-0">Writing maintainable, scalable solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="highlight-item d-flex align-items-start">
+                                    <div class="highlight-icon me-3 flex-shrink-0">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h5 class="mb-2">Problem Solver</h5>
+                                        <p class="mb-0">Turning complex challenges into elegant solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="highlight-item d-flex align-items-start">
+                                    <div class="highlight-icon me-3 flex-shrink-0">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h5 class="mb-2">Innovation Focused</h5>
+                                        <p class="mb-0">Always exploring cutting-edge technologies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="code-animation">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span> 
+                                <span class="code-variable">developer</span> = {
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">name:</span> 
+                                <span class="code-string">"Dvir Kakun"</span>,
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">skills:</span> [
+                                <span class="code-string">"React"</span>, 
+                                <span class="code-string">"FastAPI"</span>],
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">passion:</span> 
+                                <span class="code-string">"Building the future"</span>
+                            </div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="skills-title mb-4">
+                        My <span class="text-gradient-orange">Skills</span>
+                    </h2>
+                    <p class="skills-subtitle">
+                        Technologies and tools I use to bring ideas to life
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card frontend-card">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <div class="skill-icon me-3 flex-shrink-0">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4 class="skill-title mb-0">Frontend</h4>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Shadcn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card backend-card">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <div class="skill-icon me-3 flex-shrink-0">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4 class="skill-title mb-0">Backend</h4>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-tags">
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Pydantic</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card tools-card">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <div class="skill-icon me-3 flex-shrink-0">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h4 class="skill-title mb-0">Tools</h4>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="portfolio-title mb-4">
+                        My <span class="text-gradient-green">Portfolio</span>
+                    </h2>
+                    <p class="portfolio-subtitle">
+                        Showcasing projects that combine innovation with technical excellence
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- MovieCompass Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/MovieCompass-Demo-Cover.jpg" alt="MovieCompass Project" class="project-thumbnail">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>View Live</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">MovieCompass</h3>
+                                <p class="project-subtitle">AI-Powered Movie Recommendation Platform</p>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">MongoDB Atlas</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Ollama + Mistral LLM</span>
+                            </div>
+                            
+                            <p class="project-description">
+                                Fullstack web app for personalized movie discovery using local AI models.
+                            </p>
+                            
+                            <ul class="project-features">
+                                <li>Built a local LLM engine (Ollama + Mistral 7B) for custom recommendations with async processing</li>
+                                <li>Developed a modern React 18 + TypeScript frontend with Tailwind, Shadcn, Framer Motion</li>
+                                <li>Engineered a FastAPI backend with JWT, Google OAuth2, MongoDB Atlas, TMDB API</li>
+                                <li>Deployed a Dockerized microservice architecture with isolated services</li>
+                                <li>Added real-time search, multi-criteria filtering, watchlists, ratings, and email notifications</li>
+                            </ul>
+                            
+                            <div class="project-actions d-flex gap-3 flex-wrap">
+                                <a href="https://github.com/DvirKakun/moviecompass" target="_blank" class="btn btn-project-primary">
+                                    <i class="fab fa-github me-2"></i>View Code
+                                </a>
+                                <a href="https://youtu.be/TGv8HDpFMIg" target="_blank" class="btn btn-project-secondary">
+                                    <i class="fas fa-eye me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Battleship Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/Battleship-War.png" alt="Battleship Game Project" class="project-thumbnail">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>View Live</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Battleship War Game</h3>
+                                <p class="project-subtitle">Multiplayer Web App</p>
+                            </div>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            
+                            <p class="project-description">
+                                Interactive turn-based Battleship game with real-time multiplayer and AI.
+                            </p>
+                            
+                            <ul class="project-features">
+                                <li>Built room-based online gameplay using Firebase Realtime DB and PIN access</li>
+                                <li>Designed custom AI opponent and responsive drag-and-drop board with event-driven UI</li>
+                                <li>Focused on DOM manipulation, game logic, and smooth user interaction</li>
+                            </ul>
+                            
+                            <div class="project-actions d-flex gap-3 flex-wrap">
+                                <a href="https://github.com/DvirKakun/Battleship-War-Game" target="_blank" class="btn btn-project-primary">
+                                    <i class="fab fa-github me-2"></i>View Code
+                                </a>
+                                <a href="https://battleship-war.netlify.app" target="_blank" class="btn btn-project-secondary">
+                                    <i class="fas fa-eye me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="contact-title mb-4">
+                        Get In <span class="text-gradient-blue">Touch</span>
+                    </h2>
+                    <p class="contact-subtitle">
+                        Ready to bring your ideas to life? Let's create something amazing together!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-4">
+                        <!-- Email Contact -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contact-card email-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4 class="contact-method">Email</h4>
+                                    <p class="contact-description">Drop me a line anytime</p>
+                                    <a href="mailto:kakundvir@gmail.com" class="contact-link">
+                                        kakundvir@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone Contact -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contact-card phone-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4 class="contact-method">Phone</h4>
+                                    <p class="contact-description">Let's have a conversation</p>
+                                    <a href="tel:+972524334898" class="contact-link">
+                                        +972 52-433-4898
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- LinkedIn Contact -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contact-card linkedin-card">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4 class="contact-method">LinkedIn</h4>
+                                    <p class="contact-description">Connect professionally</p>
+                                    <a href="https://www.linkedin.com/in/dvir-kakun/" target="_blank" class="contact-link">
+                                        @DvirKakun
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action -->
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-lg-6 text-center">
+                            <div class="contact-cta">
+                                <h3 class="cta-title">Ready to Start a Project?</h3>
+                                <p class="cta-description">
+                                    I'm always excited to work on innovative projects and help bring creative ideas to life.
+                                </p>
+                                <div class="cta-buttons d-flex gap-3 justify-content-center flex-wrap">
+                                    <a href="mailto:kakundvir@gmail.com" class="btn btn-contact-primary">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </a>
+                                    <a href="/Dvir%20Kakun%20-%20CV.pdf" download class="btn btn-contact-secondary">
+                                        <i class="fas fa-download me-2"></i>Download CV
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
